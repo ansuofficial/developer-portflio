@@ -253,7 +253,7 @@ input, textarea {
     line-height: 1.5;
     font-size: 14px;
     color: gray;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     text-align: justify;
     }
 
@@ -336,7 +336,7 @@ header .nav-item {
     }
 
     .about-content, .project-content {
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .about-description {
@@ -358,20 +358,26 @@ header .nav-item {
     display: none;
 }
 
+.section {
+    padding: 40px 0;
+}
+
+/* .cta-section {} */
+
 footer-items, .footer-content {
     display: block;
 }
 
 footer .nav-item {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .social-icons-wrapper {
     display: flex;
    justify-content: center;
     gap: 30px;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 
@@ -382,4 +388,32 @@ footer .nav-item {
 
     text-align: center;
 }
+
+.footer-nav-item {
+    margin: 30px 0;
+}
+}
+
+@media screen and (max-width : 522px) {
+    main, .footer-content {
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .hero-title {
+    font-size: 26px;
+}
+
+.hero-button img {
+    padding: 12px;
+    background-color: rgb(3, 72, 72);
+    
+}
+
+.hero-button-text {
+    padding: 12px;
+    background-color: rgb(3, 58, 58);
+}
+
+
 }

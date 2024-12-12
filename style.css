@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.active {
+    color: teal;
+}
+
+/* Hero setion */
+
+.hero-content {
+    position: relative;
+}
+
+.hero-content-wrapper {
+    background-color: white;
+    padding: 40px 40px 0 0;
+    width: 40%;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-title {
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: rgb(3, 58, 58);
+
+    border: none;
+    color:  white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: end;
+}
+
+.hero-button img {
+    padding: 12px;
+    background-color: rgb(3, 72, 72);
+    
+}
+
+.hero-button-text {
+    padding: 12px;
+    background-color: rgb(3, 58, 58);
+}
+
+/* About section */
+
+.about-section {
+    display: flex;
+}
+
+.about-content, .project-content {
+    margin: 0 80px;
+    padding: 50px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.about-title, .project-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    line-height: 2;
+    color: gray;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    background-color: transparent;
+
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Callto action (CTA) section */
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 30px
+}
+
+.cta-title {
+    font-size: 30px;
+    max-width: 400px;
+}
+
+.border {
+    height: 1px;
+    width: 40%;
+    background-color: gray;
+}
+
+
+/* Footer section */
+
+footer {
+    background-color: rgb(55, 55, 56);
+    padding: 40px 0;
+}
+
+.footer-content {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+}
+
+.footer-items {
+    display: flex;
+    align-items: center;
+    gap: 34px
+}
+
+footer .nav-item {
+    color: white
+}
+
+.social-icons-wrapper {
+    display: flex;
+    gap: 34px
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* PORTFOLIO PAGE*/
+
+.project-setion {
+    display: flex;
+}
+
+.project-content {
+    padding-top: 120px;
+}
+
+/* CONTACT ME PAGE */
+
+.contact-section {
+    border-top: 1px solid gray;
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-first-title-wrapper, .contact-description-wrapper {
+    width: 50%;
+}
+
+.contact-description {
+    line-height: 1.5;
+    color: gray;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+
+input, textarea {
+    display: block;
+    width: 500px;
+    padding: 15px 20px;
+    margin-top: 20px;
+
+    background-color: rgb(191, 190, 196);
+    color: gray;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+/* Tables Responsive Design */
+
+ @media screen and (max-width : 1080px) {
+    .nav-item {
+        font-size: 12px;
+    }
+
+    main {
+        max-width: 600px;
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .about-section img {
+        width: 300px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    .about-description {
+    line-height: 1.5;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+    text-align: justify;
+    }
+
+    .about-content, .project-content {
+    margin: 0 25px;
+    padding: 20px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.cta-title {
+    font-size: 20px;
+    max-width: 300px;
+}
+
+.border {
+    width: 130px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 12px;
+} 
+
+footer {
+    padding: 40px 25px;
+}
+
+.footer-content {
+    max-width: 600px;
+}
+
+}
+
+
+/* Mobile Responsive Design  */
+
+@media screen and (max-width : 614px) {
+
+main, .footer-content {
+        max-width: 500px;
+    }
+
+header .nav-item {
+    display: none;
+ }
+
+.hamburger-icon {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.hero-content-wrapper {
+    position: static;
+     width: 100%;
+}
+
+.hero-title {
+    font-size: 50px;
+}
+
+
+.hero-button img {
+    padding: 20px;
+    background-color: rgb(3, 72, 72);
+    
+}
+
+.hero-button-text {
+    padding: 20px;
+    background-color: rgb(3, 58, 58);
+}
+
+.about-section {
+    display: block;
+}
+
+.about-section img {
+        width: 100%;
+    }
+
+    .about-content, .project-content {
+    margin: 40px 0;
+}
+
+.about-description {
+    line-height: 2.5;
+}
+.cta-section {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+}
+
+.cta-title {
+    font-size: 30px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.border {
+    display: none;
+}
+
+footer-items, .footer-content {
+    display: block;
+}
+
+footer .nav-item {
+    display: block;
+    margin: 10px 0;
+}
+
+.social-icons-wrapper {
+    display: flex;
+   justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+
+.footer-items {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+
+    text-align: center;
+}
+}
